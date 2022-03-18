@@ -54,17 +54,17 @@ function Contact() {
           <p className="c-desc">
             <b>What's your story? </b> Get in touch. Always available for
             freelancing if the right projects come along me.{' '}
-            <form ref={formRef} onSubmit={handleSubmit}>
-              <input type="text" placeholder="Name" name="user_name" />
-              <input type="text" placeholder="subject" name="user_subject" />
-              <input type="email" placeholder="Email" name="user_email" />
-              <textarea rows={5} placeholder="Message" name="message" />
-              <button>Submit</button>
-              <div className="c-reply">
-                {done && 'Thank you, we will reply you soon.'}
-              </div>
-            </form>
           </p>
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <input type="text" placeholder="Name" name="user_name" />
+            <input type="text" placeholder="subject" name="user_subject" />
+            <input type="email" placeholder="Email" name="user_email" />
+            <textarea rows={5} placeholder="Message" name="message" />
+            <button>Submit</button>
+            <div className="c-reply">
+              {done && 'Thank you, we will reply you soon.'}
+            </div>
+          </form>
         </div>
       </div>
     </div>
